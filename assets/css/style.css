@@ -62,6 +62,21 @@ h3 {
     color: black;
 }
 
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.dropdown ul {
+    background-color: var(--quarternary-color);
+}
+
+.dropdown-item:active {
+    background-color: white;
+    border: 2px solid black;
+    padding: 2.5px 14.5px;
+    color: black;
+}
+
 /* Header */
 
 .hero {
@@ -80,7 +95,7 @@ h3 {
 
 .main-header {
     background-color: rgba(245, 206, 163, 0.7);
-    padding: 64px 64px;
+    padding: 64px 32px;
 }
 
 .main-header .btn {
@@ -113,7 +128,15 @@ h3 {
 
 /* Media queries */
 
-/* Medium devices (tablets. 768px and up */
+/* small devices (mobile phones, 576px and below */
+@media screen and (max-width: 576px) {
+    /*reduce header padding to fit smaller screens */
+    .main-header {
+        padding: 16px 8px;
+        width: 90vw;
+    }
+}
+
 @media screen and (min-width: 768px) {
     /*Make all intro cards the same height for consistency */
     #intro .card {
