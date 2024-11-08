@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Safeguard Solutions, visit us to learn more about safeguarding" />
+
+    <!-- Bootstap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Safeguard Solutions | Home</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Safeguard Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Safeguarding
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#intro">Introduction to safeguarding</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#key-principles">Key principles of safeguarding</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#recognising-concerns">Recognising safeguarding
+                                    concerns</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#responding-concerns">Responding to safeguarding
+                                    concerns</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#contact" class="btn nav-button me-2 my-2 my-lg-0">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#booking" class="btn nav-button mt-2 mt-lg-0">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with hero image -->
+    <header id="home">
+        <div class="container-fluid hero">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="main-header mb-4">
+                        <h1><strong>Safeguard Solutions</strong></h1>
+                        <h2><em>Securing a safer tomorrow.</em></h2>
+                        <a href="#intro" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main element to hold all the key sections of the homepage -->
+    <main>
+        <!-- About section -->
+        <section class="container-fluid" id="about">
+            <div class="row mt-4 text-center d-flex px-3">
+                <div class=" col-12 mb-md-0 flex-grow-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"><i class="fa-solid fa-person"></i>  About</h2>
+                            <p class="card-text">
+                                At <strong>Safeguard Solutions</strong>, we are dedicated to promoting the safety,
+                                rights, and dignity of
+                                adults at risk of harm, abuse, or neglect. Our mission is to provide resources and
+                                guidance for recognising and responding to safeguarding concerns.
+                                <br>
+                                <em>Together, we can help create a safer community for all.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction section -->
+        <section class="container-fluid" id="intro">
+            <div class="row mt-4 text-center d-flex px-3">
+                <div class=" col-12 col-md-6 mb-3 mb-md-0 flex-grow-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"><i class="fa-solid fa-shield-heart"></i>  What is Safeguarding?</h2>
+                            <p class="card-text">
+                                Safeguarding refers to protecting an adults right to live in safety, free from abuse
+                                and neglect. It involves people and organisations working together to prevent risks
+                                to an individual’s safety whilst ensuring their wellbeing is promoted.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 flex-grow-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"><i class="fa-solid fa-circle-exclamation"></i>  Importance of Safeguarding</h2>
+                            <ul class="card-text text-start">
+                                <li>Protects vulnerable people from harm.</li>
+                                <li>Prevents crime and exploitation.</li>
+                                <li>Promotes equal opportunities.</li>
+                                <li>Builds trust and confidence.</li>
+                                <li>Upholds legal obligations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/9dc22cb057.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document.querySelectorAll(".navbar-collapse .nav-link").forEach((link) => {
+            link.addEventListener("click", function (e) {
+                let section = document.querySelector(e.target.getAttribute("href"));
+                if (section) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                    window.scroll({
+                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                        behavior: "smooth"
+                    });
+                    document.querySelector(".navbar-collapse").classList.remove(
+                        "show"); // Collapse navbar
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

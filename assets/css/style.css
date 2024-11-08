@@ -1,0 +1,143 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --primary-color: #e7e7e7; /* platinum */
+    --secondary-color: #c2c2c2; /* silver */
+    --tertiary-color: #f2c085; /* orange */
+    --quarternary-color: #f5cea3; /* light orange */
+}
+
+/* Global styles */
+
+body {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    padding-top: 56px; /* pushes the header down under fixed navbar */
+    margin-bottom: 400px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #f2c085;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: 2px solid #f2c085;
+    padding: 5.2px 11.2px;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+
+#navbar {
+    background-color: #e7e7e7;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* Header */
+
+.hero {
+    height: 600px;
+    background: url("../images/hero.jpg") no-repeat center center/cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-header h2 {
+    text-transform: none;
+}
+
+.main-header {
+    background-color: rgba(245, 206, 163, 0.7);
+    padding: 64px 64px;
+}
+
+.main-header .btn {
+    opacity: 1;
+}
+
+/* About */
+
+#about .card {
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    border: none;
+    padding: 20px;
+}
+
+/* Introduction section */
+
+#intro .card {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    border: none;
+    padding: 20px;
+}
+
+#intro .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media queries */
+
+/* Medium devices (tablets. 768px and up */
+@media screen and (min-width: 768px) {
+    /*Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 330px;
+    }
+}
+
+/* large devices (small laptops, 992px and up */
+@media screen and (min-width: 992px) {
+    /*Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 260px;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /*Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 230px;
+    }
+
+
+
+
+
+
